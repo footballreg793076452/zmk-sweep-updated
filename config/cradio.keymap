@@ -64,8 +64,8 @@
         //|   SHFT   |    Z     │    X     │    C    │    V    │    B    │   │    N    │    M     │   , <    │   . >    │    /?   |   SHFT   |
                         &kp Z      &kp X      &kp C     &kp V     &kp B         &kp N     &kp M     &kp COMMA   &kp DOT   &kp FSLH  
         //╰──────────┴──────────┴──────────┼─────────┼─────────┼─────────┤   ├─────────┼──────────┼──────────┼──────────┴─────────┴──────────╯
-        //                                 |   GUI   |LEFT/ESC |   SPC   |   |   SPC   |RIGHT/TAB |   ALT    |
-                                                     &lt LEF ESC &kp SPACE    &kp SPACE &lt RIG TAB 
+        //                                 |   GUI   |LEFT/ESC |   ENT   |   |   SPC   |RIGHT/TAB |   ALT    |
+                                                     &lt LEF ESC &kp RET      &kp SPACE &lt RIG TAB 
         //                                 ╰─────────┴─────────┴─────────╯   ╰─────────┴──────────┴──────────╯
             >;
         };
@@ -83,8 +83,8 @@
         //|   SHFT   |    Z     │    X     │    C    │    V    │    B    │   │    N    │    M     │   , <    │   . >    │    /?   |   SHFT   |
                         &kp Z      &kp X      &kp C     &kp V     &kp B         &kp N     &kp M     &kp COMMA   &kp DOT   &kp FSLH  
         //╰──────────┴──────────┴──────────┼─────────┼─────────┼─────────┤   ├─────────┼──────────┼──────────┼──────────┴─────────┴──────────╯
-        //                                 |   GUI   |LEFT/ESC |   SPC   |   |   SPC   |RIGHT/TAB |   ALT    |
-                                                     &lt LEF ESC &kp SPACE    &kp SPACE &lt RIG TAB  &kp RALT
+        //                                 |   GUI   |LEFT/ESC |   ENT   |   |   SPC   |RIGHT/TAB |   ALT    |
+                                                     &lt LEF ESC &kp RET      &kp SPACE &lt RIG TAB 
         //                                 ╰─────────┴─────────┴─────────╯   ╰─────────┴──────────┴──────────╯
             >;
         };
@@ -98,7 +98,7 @@
         //├──────────┼──────────┼──────────┼─────────┼─────────┼─────────┤   ├─────────┼──────────┼──────────┼──────────┼─────────┼──────────┤
         //|          |   BTC    |          |         |         | WINDOWS |   |    -    |    +     |    _     |    =     |    )    |    \     |
         //╰──────────┴──────────┴──────────┼─────────┼─────────┼─────────┤   ├─────────┼──────────┼──────────┼──────────┴─────────┴──────────╯
-        //                                 |   GUI   |LEFT/ESC |   SPC   |   |   SPC   |RIGHT/TAB |   ALT    |
+        //                                 |   GUI   |LEFT/ESC |   ENT   |   |   SPC   |RIGHT/TAB |   ALT    |
         //                                 ╰─────────┴─────────┴─────────╯   ╰─────────┴──────────┴──────────╯
             bindings = <
                 &kp EXCL      &kp AT       &kp HASH     &kp DLLR     &kp PRCNT      &kp CARET  &kp AMPS  &kp KP_MULTIPLY &kp LPAR   &kp BSPC
@@ -117,7 +117,7 @@
         //├──────────┼──────────┼──────────┼─────────┼─────────┼─────────┤   ├─────────┼──────────┼──────────┼──────────┼─────────┼──────────┤
         //|    "     |    6     |    7     |    8    |    9    |    0    |   |    -    |    +     |    _     |    {     |    }    |    |     |
         //╰──────────┴──────────┴──────────┼─────────┼─────────┼─────────┤   ├─────────┼──────────┼──────────┼──────────┴─────────┴──────────╯
-        //                                 |   GUI   |LEFT/ESC |   SPC   |   |   SPC   |RIGHT/TAB |   ALT    |
+        //                                 |   GUI   |LEFT/ESC |   ENT   |   |   SPC   |RIGHT/TAB |   ALT    |
         //                                 ╰─────────┴─────────┴─────────╯   ╰─────────┴──────────┴──────────╯            
         bindings = <
               &kp EXCL &kp AT   &kp HASH  &kp DLLR  &kp PRCNT           &kp CARET  &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR  
@@ -136,10 +136,10 @@
         //├──────────┼──────────┼──────────┼─────────┼─────────┼─────────┤   ├─────────┼──────────┼──────────┼──────────┼─────────┼──────────┤
         //|    "     |    "     |    |     |         |         |         |   | BRIGHT- |   VOL-   | PREVSONG | VOL MUTE |   F12   |          |
         //╰──────────┴──────────┴──────────┼─────────┼─────────┼─────────┤   ├─────────┼──────────┼──────────┼──────────┴─────────┴──────────╯
-        //                                 |   GUI   |LEFT/ESC |   SPC   |   |   SPC   |RIGHT/TAB |   ALT    |
+        //                                 |   GUI   |LEFT/ESC |   ENT   |   |   SPC   |RIGHT/TAB |   ALT    |
         //                                 ╰─────────┴─────────┴─────────╯   ╰─────────┴──────────┴──────────╯   
         bindings = <
-                &kp EXCL &kp AT     &kp HASH  &kp DLLR  &kp PRCNT         &kp F6          &kp F7          &kp F8        &kp F9       &kp F10    
+                &kp F1   &kp F2     &kp F3    &kp F4    &kp F5            &kp F6          &kp F7          &kp F8        &kp F9       &kp F10    
                 &kp SQT  &kp BSLH   &trans    &trans    &trans            &kp C_BRI_UP    &kp C_VOL_UP    &kp C_NEXT    &kp C_PP     &kp F11    
                 &kp DQT  &kp PIPE   &trans    &trans    &trans            &kp C_BRI_DEC   &kp C_VOL_DN    &kp C_PREV    &kp C_MUTE   &kp F12    
                                               &trans    &trans            &trans          &trans           
