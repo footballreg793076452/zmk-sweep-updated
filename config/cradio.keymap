@@ -58,8 +58,8 @@
         //|   ESC    │    Q     │    W     │    E    │    R    │    T    │   │    Y    │    U     │    I     │    O     │    P    │   BKSP   |
                         &kp Q      &kp W      &kp E     &kp R      &kp T         &kp Y    &kp U      &kp I     &kp O       &kp P    
         //├──────────┼──────────┼──────────┼─────────┼─────────┼─────────┤   ├─────────┼──────────┼──────────┼──────────┼─────────┼──────────┤
-        //|   CTRL   │    A     │    S     │    D    │    F    │    G    │   │    H    │    J     │    K     │    L     │    ;:   |   ENT    |
-                      MAC_HRML(A,    S,         D,        F)      &kp G         &kp H   MAC_HRMR(J,    K,         L,       SEMI)    
+        //|   CTRL   │    A     │    S     │    D    │    F    │    G    │   │    H    │    J     │    K     │    L     │   ENT   |   ENT    |
+                      MAC_HRML(A,    S,         D,        F)      &kp G         &kp H   MAC_HRMR(J,    K,         L,        RET)    
         //├──────────┼──────────┼──────────┼─────────┼─────────┼─────────┤   ├─────────┼──────────┼──────────┼──────────┼─────────┼──────────┤
         //|   SHFT   |    Z     │    X     │    C    │    V    │    B    │   │    N    │    M     │   , <    │   . >    │    /?   |   SHFT   |
                         &kp Z      &kp X      &kp C     &kp V     &kp B         &kp N     &kp M     &kp COMMA   &kp DOT   &kp FSLH  
@@ -77,8 +77,8 @@
         //|   ESC    │    Q     │    W     │    E    │    R    │    T    │   │    Y    │    U     │    I     │    O     │    P    │   BKSP   |
                         &kp Q      &kp W      &kp E     &kp R      &kp T         &kp Y    &kp U      &kp I     &kp O       &kp P    
         //├──────────┼──────────┼──────────┼─────────┼─────────┼─────────┤   ├─────────┼──────────┼──────────┼──────────┼─────────┼──────────┤
-        //|   CTRL   │    A     │    S     │    D    │    F    │    G    │   │    H    │    J     │    K     │    L     │    ;:   |   ENT    |
-                      WIN_HRML(A,    S,         D,        F)      &kp G         &kp H   WIN_HRMR(J,    K,         L,       SEMI)    
+        //|   CTRL   │    A     │    S     │    D    │    F    │    G    │   │    H    │    J     │    K     │    L     │   ENT   |   ENT    |
+                      WIN_HRML(A,    S,         D,        F)      &kp G         &kp H   WIN_HRMR(J,    K,         L,        RET)    
         //├──────────┼──────────┼──────────┼─────────┼─────────┼─────────┤   ├─────────┼──────────┼──────────┼──────────┼─────────┼──────────┤
         //|   SHFT   |    Z     │    X     │    C    │    V    │    B    │   │    N    │    M     │   , <    │   . >    │    /?   |   SHFT   |
                         &kp Z      &kp X      &kp C     &kp V     &kp B         &kp N     &kp M     &kp COMMA   &kp DOT   &kp FSLH  
@@ -132,16 +132,16 @@
         //╭──────────┬──────────┬──────────┬─────────┬─────────┬─────────╮   ╭─────────┬──────────┬──────────┬──────────┬─────────┬──────────╮
         //|   TAB    |    F1    |    F2    |    F3   |    F4   |    F5   |   |    F6   |    F7    |    F8    |    F9    |   F10   |   BKSP   |
         //├──────────┼──────────┼──────────┼─────────┼─────────┼─────────┤   ├─────────┼──────────┼──────────┼──────────┼─────────┼──────────┤
-        //|    '     |    '     |    \     |         |         |         |   | BRIGHT+ |   VOL+   | NEXTSONG |PAUSEMUSIC|   F11   |          |
+        //|    '     |    '     |    \     |    ;:   |         |         |   | BRIGHT+ |   VOL+   | NEXTSONG |PAUSEMUSIC|   F11   |          |
         //├──────────┼──────────┼──────────┼─────────┼─────────┼─────────┤   ├─────────┼──────────┼──────────┼──────────┼─────────┼──────────┤
-        //|    "     |    "     |    |     |         |         |         |   | BRIGHT- |   VOL-   | PREVSONG | VOL MUTE |   F12   |          |
+        //|    "     |    "     |    |     |    :    |         |         |   | BRIGHT- |   VOL-   | PREVSONG | VOL MUTE |   F12   |          |
         //╰──────────┴──────────┴──────────┼─────────┼─────────┼─────────┤   ├─────────┼──────────┼──────────┼──────────┴─────────┴──────────╯
         //                                 |   GUI   |LEFT/ESC |   ENT   |   |   SPC   |RIGHT/TAB |   ALT    |
         //                                 ╰─────────┴─────────┴─────────╯   ╰─────────┴──────────┴──────────╯   
         bindings = <
                 &kp F1   &kp F2     &kp F3    &kp F4    &kp F5            &kp F6          &kp F7          &kp F8        &kp F9       &kp F10    
-                &kp SQT  &kp BSLH   &trans    &trans    &trans            &kp C_BRI_UP    &kp C_VOL_UP    &kp C_NEXT    &kp C_PP     &kp F11    
-                &kp DQT  &kp PIPE   &trans    &trans    &trans            &kp C_BRI_DEC   &kp C_VOL_DN    &kp C_PREV    &kp C_MUTE   &kp F12    
+                &kp SQT  &kp BSLH   &kp SEMI  &trans    &trans            &kp C_BRI_UP    &kp C_VOL_UP    &kp C_NEXT    &kp C_PP     &kp F11    
+                &kp DQT  &kp PIPE   &kp COLON &trans    &trans            &kp C_BRI_DEC   &kp C_VOL_DN    &kp C_PREV    &kp C_MUTE   &kp F12    
                                               &trans    &trans            &trans          &trans           
             >;
         };
