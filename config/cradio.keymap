@@ -86,7 +86,7 @@
             &kp A       &kp S       &kp D       &kp F        &kp G          &kp MINUS   &kp EQUAL   &kp SQT  &kp SEMI  &kp ENTER
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│SHIFT │  X       │ C        │   V      │  B        │   │ \ |      │ [ {        │ .>      │ ] }       │ BACKSPACE     │
-            &kp LSHIFT   &kp X       &kp C       &kp V     &kp B           &kp BSLH    &LBKT   &kp DOT  &kp RBKT  &kp BSPC 
+            &kp LSHIFT   &kp X       &kp C       &kp V     &kp B           &kp BSLH    &kp LBKT   &kp DOT  &kp RBKT  &kp BSPC 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &kp ESC             &trans                       &kp TAB     &kp DEL
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
